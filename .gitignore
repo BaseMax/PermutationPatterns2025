@@ -1,3 +1,5 @@
 *.pdf
 *.rar
 *.zip
+*.synctex(busy)
+*.synctex.gz
