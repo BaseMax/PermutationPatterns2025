@@ -16,41 +16,48 @@
 
 \renewcommand{\baselinestretch}{1.15}
 
-\title{\textbf{Using SAT Solvers to Prove Pattern Containment}}
+\title{\textbf{SAT Solvers and Permutation Patterns: A New Frontier in Combinatorics}}
 \author{Seyyed Ali Mohammadiyeh \\
-	Department of Pure Mathematics, University of Kashan \\
-	\texttt{max@std.kashanu.ac.ir}, \texttt{alim@kashanu.ac.ir}
-	}
+Department of Pure Mathematics, University of Kashan \\
+\texttt{max@std.kashanu.ac.ir}, \texttt{alim@kashanu.ac.ir}
+}
 
-\date{}
+\date{
+\vspace{0.5em}
+\large
+\textit{Permutation Patterns 2025} \\
+International Conference on Permutation Patterns \\
+St Andrews, Scotland \\
+July 7--11, 2025
+}
 
 \begin{document}
-	
-	\maketitle
-	
-	\vspace{-1.5em}
-	\section*{Abstract}
-	
-	In this work, we explore the use of modern \textbf{SAT solvers} as a computational tool for investigating \textbf{permutation pattern containment and avoidance}. Specifically, we encode the existence of permutations containing or avoiding a given set of patterns as a Boolean satisfiability problem. This allows us to leverage the remarkable efficiency of SAT solvers to answer containment questions that are otherwise difficult to resolve analytically.
-	
-	\medskip
-	
-	We present a general-purpose encoding that maps permutations of length $n$ and target patterns of length $k$ into propositional logic, preserving the semantics of pattern containment. This encoding is optimized to reduce variable count and solver time, and supports both classical patterns and \textbf{vincular (adjacent)} constraints.
-	
-	\medskip
-	
-	Our implementation allows for automated generation of minimal examples, counterexamples, and can be used to confirm or refute \textbf{Wilf-equivalences}, even in cases where traditional enumeration or generating function methods fall short.
-	
-	\medskip
-	
-	As a case study, we analyze several open questions on pattern pairs of lengths 4 and 5, demonstrating how SAT-based techniques can provide computational evidence and insight, as well as full proofs in bounded-length domains.
-	
-	\medskip
-	
-	This approach opens up a promising new direction at the interface of \textbf{combinatorics, formal logic, and algorithm design}, and provides a reusable framework for future explorations in pattern avoidance and permutation class classification.
-	
-	\vfill
-	\noindent
-	\textbf{Keywords:} SAT solving, permutation patterns, pattern containment, pattern avoidance, Wilf-equivalence, combinatorics, logic encoding
-	
+
+\maketitle
+
+\vspace{-1.5em}
+\section*{Abstract}
+
+The study of permutation patterns is a rich and evolving area in combinatorics, deeply connected to sorting algorithms, enumerative structures, and discrete geometry. In this talk, we introduce a novel approach that brings together the power of \textbf{Boolean satisfiability solvers (SAT solvers)} and the theory of permutation patterns. 
+
+\medskip
+
+We investigate how modern SAT solvers can be harnessed to model and solve problems in \textbf{pattern containment}, \textbf{avoidance}, and \textbf{classification of permutation classes}. By encoding constraints into propositional logic, we enable automated reasoning about the existence of permutations that satisfy complex pattern conditions, including classical, vincular, and barred patterns.
+
+\medskip
+
+This computational methodology allows us to explore longstanding open problems, such as verifying \textbf{Wilf-equivalence}, generating minimal counterexamples, and testing conjectures that are beyond current enumeration techniques. Our encoding is flexible, efficient, and extensible, designed to reduce variable count and solve time for patterns of increasing complexity.
+
+\medskip
+
+We present experimental results and case studies where SAT-based approaches provide new insights, particularly in analyzing permutation classes of length 4 and 5. These results show how tools from theoretical computer science can contribute to pure mathematical discovery.
+
+\medskip
+
+This fusion of logic and combinatorics opens new doors for researchers, suggesting a broader framework for the use of SAT solvers in algebraic and enumerative combinatorics.
+
+\vfill
+\noindent
+\textbf{Keywords:} SAT solvers, permutation patterns, pattern avoidance, pattern containment, Wilf-equivalence, computational combinatorics, logic encoding
+
 \end{document}
