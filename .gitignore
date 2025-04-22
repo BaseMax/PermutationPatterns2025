@@ -3,3 +3,4 @@
 *.zip
 *.synctex(busy)
 *.synctex.gz
+*.log
