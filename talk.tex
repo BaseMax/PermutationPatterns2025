@@ -1,0 +1,56 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+\definecolor{titleblue}{RGB}{10,45,120}
+\definecolor{graytext}{gray}{0.2}
+
+\titleformat{\section}{\normalfont\Large\bfseries\color{titleblue}}{}{0pt}{}
+\titleformat{\subsection}{\normalfont\large\bfseries\color{titleblue}}{}{0pt}{}
+
+\renewcommand{\baselinestretch}{1.15}
+
+\title{\textbf{Using SAT Solvers to Prove Pattern Containment}}
+\author{Seyyed Ali Mohammadiyeh \\
+	Department of Pure Mathematics, University of Kashan \\
+	\texttt{max@std.kashanu.ac.ir}, \texttt{alim@kashanu.ac.ir}
+	}
+
+\date{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\vspace{-1.5em}
+	\section*{Abstract}
+	
+	In this work, we explore the use of modern \textbf{SAT solvers} as a computational tool for investigating \textbf{permutation pattern containment and avoidance}. Specifically, we encode the existence of permutations containing or avoiding a given set of patterns as a Boolean satisfiability problem. This allows us to leverage the remarkable efficiency of SAT solvers to answer containment questions that are otherwise difficult to resolve analytically.
+	
+	\medskip
+	
+	We present a general-purpose encoding that maps permutations of length $n$ and target patterns of length $k$ into propositional logic, preserving the semantics of pattern containment. This encoding is optimized to reduce variable count and solver time, and supports both classical patterns and \textbf{vincular (adjacent)} constraints.
+	
+	\medskip
+	
+	Our implementation allows for automated generation of minimal examples, counterexamples, and can be used to confirm or refute \textbf{Wilf-equivalences}, even in cases where traditional enumeration or generating function methods fall short.
+	
+	\medskip
+	
+	As a case study, we analyze several open questions on pattern pairs of lengths 4 and 5, demonstrating how SAT-based techniques can provide computational evidence and insight, as well as full proofs in bounded-length domains.
+	
+	\medskip
+	
+	This approach opens up a promising new direction at the interface of \textbf{combinatorics, formal logic, and algorithm design}, and provides a reusable framework for future explorations in pattern avoidance and permutation class classification.
+	
+	\vfill
+	\noindent
+	\textbf{Keywords:} SAT solving, permutation patterns, pattern containment, pattern avoidance, Wilf-equivalence, combinatorics, logic encoding
+	
+\end{document}
